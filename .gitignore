@@ -1,0 +1,450 @@
+# web/.gitignore (React фронтенд)
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Production builds
+build/
+dist/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+.nyc_output/
+
+# ESLint cache
+.eslintcache
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testing
+coverage/
+.jest/
+junit.xml
+test-results.xml
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Bundle analyzer
+bundle-analyzer-report.html
+
+# TypeScript
+*.tsbuildinfo
+
+---
+
+# backend/.gitignore (Go бэкенд)
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+main
+chicken-farm
+chicken-farm.exe
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+*.prof
+
+# Dependency directories (remove the comment below to include it)
+vendor/
+
+# Go workspace file
+go.work
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+chicken_farm.db
+test_*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Log files
+*.log
+logs/
+
+# Configuration files (if they contain sensitive data)
+config.json
+config.yaml
+config.yml
+*.conf
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Coverage reports
+coverage.out
+coverage.html
+profile.out
+cpu.prof
+mem.prof
+block.prof
+mutex.prof
+
+# Test artifacts
+test-results/
+test-report.md
+test-results.log
+testdata/temp/
+
+# Build artifacts
+dist/
+build/
+
+# Docker
+.dockerignore
+
+# Air (Go live reload)
+.air.toml
+tmp/
+
+# Documentation build
+docs/_build/
+
+# Backup files
+*.bak
+*.backup
+
+# Performance monitoring
+*.pprof
+
+# Mock files (if auto-generated)
+mocks/
+*_mock.go
+
+# Certificates and keys
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Archives
+*.tar
+*.tar.gz
+*.zip
+*.rar
+
+# Local development
+local/
+dev/
+
+---
+
+# Корневой .gitignore (для всего проекта)
+
+# Общие IDE файлы
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS файлы
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Логи
+*.log
+logs/
+
+# Временные файлы
+tmp/
+temp/
+*.tmp
+
+# Environment файлы (общие)
+.env
+.env.local
+.env.development
+.env.production
+
+# Документация
+docs/_build/
+
+# Архивы
+*.tar
+*.tar.gz
+*.zip
+*.rar
+
+# E2E тесты (если в корне проекта)
+e2e/node_modules/
+e2e/playwright-report/
+e2e/test-results/
+e2e/screenshots/
+e2e/videos/
+
+# Тестовые отчеты (общие)
+test-report.md
+test-results.log
+coverage/
+*.prof
+*.bench
+
+# Бэкапы
+*.bak
+*.backup
+
+# Сертификаты
+*.pem
+*.key
+*.crt
+
+# Docker
+docker-compose.override.yml
+
+# Локальная разработка
+local/
+dev/
+
+---
+
+# Дополнительный .gitignore_templates для справки
+
+# ===============================================
+# Шаблоны .gitignore для различных технологий
+# ===============================================
+
+# ===== NODE.JS / REACT =====
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.env
+build/
+coverage/
+.eslintcache
+
+# ===== GO =====
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+vendor/
+*.db
+main
+
+# ===== PYTHON =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ===== JAVA =====
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+target/
+.mtj.tmp/
+
+# ===== C# =====
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.exe
+*.pdb
+
+# ===== DOCKER =====
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# ===== KUBERNETES =====
+*.kubeconfig
+secrets/
+configmaps/
+
+# ===== TERRAFORM =====
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+*.tfvars
+
+# ===== ANSIBLE =====
+*.retry
+.vault_pass
+
+# ===== DATABASE =====
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.mdb
+*.accdb
+
+# ===== CACHE DIRECTORIES =====
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+
+# ===== TESTING =====
+coverage/
+test-results/
+*.coverage
+.nyc_output/
+junit.xml
+
+# ===== MONITORING =====
+*.prof
+*.pprof
+*.trace
+
+# ===== CERTIFICATES =====
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+
+# ===== COMMON TEMP FILES =====
+*~
+*.swp
+*.swo
+.tmp/
+temp/

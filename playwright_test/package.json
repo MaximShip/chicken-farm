@@ -1,0 +1,26 @@
+{
+  "name": "chicken-farm-e2e-tests",
+  "version": "1.0.0",
+  "description": "E2E tests for chicken farm management system",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:dashboard": "playwright test tests/dashboard.spec.js",
+    "test:chickens": "playwright test tests/chicken-management.spec.js",
+    "test:employees": "playwright test tests/employee-management.spec.js",
+    "test:reports": "playwright test tests/reports.spec.js",
+    "test:integration": "playwright test tests/integration/",
+    "install-browsers": "playwright install chromium",
+    "clean": "rm -rf playwright-report test-results screenshots videos"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
